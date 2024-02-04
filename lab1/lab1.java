@@ -9,26 +9,22 @@ public class lab1 {
             d.put(i, target - i);
         }
 
-        int[] output = new int[]{-1,-1};
-
         for (int i = 0; i < nums.length; i++){
             if (d.containsKey(d.get(nums[i]))){
                 for (int j = i + 1; j < nums.length; j++){
                     if (nums[j] == d.get(nums[i])){
-                        output[0] = i;
-                        output[1] = j;
-                        return  output;
+                        return new int[] {i, j};
                     }
                 }
             }
         }
 
-        return output;
+        return new int[] {-1, -1};
     }
 
     public static void main(String[] args) {
         int[] arr = {99, 0, 1, 10};
-        int t = 108;
+        int t = 99;
 
         int[] o = findPair(arr, t);
 

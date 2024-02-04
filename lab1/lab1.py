@@ -6,14 +6,11 @@ def findPair(arr, t):
     for i in arr:
         d[i] = t - i
 
-    output = [-1,-1]
     for i in range(len(arr)):
         if d[arr[i]] in d.keys():
-            output[0] = i
             for j in range(i+1, len(arr)):
                 if arr[j] == d[arr[i]]:
-                    output[1] = j
-                    return output
-    return output
+                    return i, j
+    return -1,-1
 
 print(findPair(nums, target))

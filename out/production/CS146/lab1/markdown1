@@ -1,3 +1,0 @@
-iterate through input array and create hashmap of format { int, target - int }
-check for all hashmap entries if target - int exists as a key
-return pair if found

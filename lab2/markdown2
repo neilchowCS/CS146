@@ -1,0 +1,7 @@
+check strings for length
+create hashmap from string 1 of format { unique char, number of occurrences }
+iterate through string 2:
+    if char does not exist as key, return false
+    if count < 1, return false
+    otherwise, decrement the count of corresponding map entry
+return true after going through all of string 2

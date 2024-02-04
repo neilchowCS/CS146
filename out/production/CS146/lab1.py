@@ -1,15 +1,15 @@
 nums = [99,0,10,1]
 target = 100
 
-def FindPair(arr, t):
+def findPair(arr, t):
     d = {}
     for i in arr:
         d[i] = t - i
 
-    for i in d.values():
+    for i in arr:
         if d[i] in d.keys():
-            return d[i], i
-    return -1,-1
+            return i, d[i]
+    return None
 
-x = FindPair(nums, target)
-print("no pair" if x == (-1, -1) else x)
+x = findPair(nums, target)
+print("no pair" if x is None else x)

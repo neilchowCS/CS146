@@ -6,10 +6,14 @@ def findPair(arr, t):
     for i in arr:
         d[i] = t - i
 
-    for i in arr:
-        if d[i] in d.keys():
-            return i, d[i]
-    return None
+    output = [-1,-1]
+    for i in range(len(arr)):
+        if d[arr[i]] in d.keys():
+            output[0] = i
+            for j in range(i+1, len(arr)):
+                if arr[j] == d[arr[i]]:
+                    output[1] = j
+                    return output
+    return output
 
-x = findPair(nums, target)
-print("no pair" if x is None else x)
+print(findPair(nums, target))

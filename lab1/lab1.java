@@ -9,21 +9,29 @@ public class lab1 {
             d.put(i, target - i);
         }
 
-        for (int i : nums){
-            if (d.containsKey(d.get(i))){
-                return new int[] {i, d.get(i)};
+        int[] output = new int[]{-1,-1};
+
+        for (int i = 0; i < nums.length; i++){
+            if (d.containsKey(d.get(nums[i]))){
+                for (int j = i + 1; j < nums.length; j++){
+                    if (nums[j] == d.get(nums[i])){
+                        output[0] = i;
+                        output[1] = j;
+                        return  output;
+                    }
+                }
             }
         }
 
-        return null;
+        return output;
     }
 
     public static void main(String[] args) {
         int[] arr = {99, 0, 1, 10};
-        int t = 109;
+        int t = 108;
 
         int[] o = findPair(arr, t);
 
-        System.out.println(o == null?"no pair":o[0] + " " + o[1]);
+        System.out.println(o[0] + ", " + o[1]);
     }
 }

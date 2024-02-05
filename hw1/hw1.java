@@ -11,6 +11,6 @@ public class hw1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(palindrome("bass ssab")?"palindrome":"not palindrome");
+        System.out.println(palindrome("bass bsab")?"palindrome":"not palindrome");
     }
 }

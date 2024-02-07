@@ -1,0 +1,5 @@
+recursively scan through array, halving slice each time
+check if midpoint of slice is the first bad version
+if not, check the corresponding half of the slice desired result is in
+
+returns index of first bad index, -1 if all are good

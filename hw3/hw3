@@ -1,0 +1,10 @@
+1. insertion sort
+best case O(n)
+all elements in order
+average/worst case O(n^2)
+
+2. matrix multiplication
+best case O(1)
+matrix mismatch
+average/worst case O(n^2)
+2 nested for loops: O(n^2)

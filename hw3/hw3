@@ -7,4 +7,4 @@ average/worst case O(n^2)
 best case O(1)
 matrix mismatch
 average/worst case O(n^2)
-2 nested for loops: O(n^2)
+2 nested for loops, with the second layer having two in parallel : O(n^2)

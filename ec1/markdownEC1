@@ -1,0 +1,7 @@
+if n <= 1, fibonacci is n
+
+if n > 1
+2 integers store previous 2 fibonacci numbers, initialized as 0 and 1
+loop n times
+each time summing up 2 stored integers, storing result and the previous 1 fibonacci number
+after loop completes, return the result

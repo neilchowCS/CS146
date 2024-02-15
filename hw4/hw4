@@ -1,0 +1,17 @@
+1. insertion sort
+best case O(n)
+all elements in order
+average/worst case O(n^2)
+
+Outer Loop: The outer loop iterates array once
+Inner Loop: Compares element with each before it until the correct position for insertion is
+ found. Worst case n comparisons, average n/3
+
+2 nested loops each O(n) -> O(n^2)
+
+2. matrix multiplication
+best case O(1)
+matrix mismatch
+
+average/worst case O(n^3)
+3 nested for loops: O(n^3)

@@ -1,0 +1,22 @@
+T(N) = 2T(N-1) + 1
+O(2^n) by master theorem
+T(N) = 3T(N-1) + n
+O(n3^n) by master theorem
+T(N) = 9T(N/2) + n^2
+O(n^3) by master theorem
+T(N) = 100T(N/2) + n^(log_2(cn + 1))  (c is a constant)
+O(n^10 log n) by master theorem
+T(N) = 4T(N/2) + n2logn
+O(n^2logn) by master theorem
+T(N) = 5T(N/2) + n2/logn
+O(n^log_2)^5 by master theorem
+
+yetAnotherFunc(n):
+  if n > 1:
+    for(i=0;i<10n;i++)
+      doSomething;
+    yetAnotherFunc(n/2);
+    yetAnotherFunc(n/2);
+
+recurrence = 2T(N/2) + 10N
+solution: O(nlogn)

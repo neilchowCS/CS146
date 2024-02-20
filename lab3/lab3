@@ -1,0 +1,31 @@
+10000000000n^2 vs n^3
+with asymptotic behavior as n becomes increasingly large, coefficient 10...0 becomes negligible,
+n^3 > n^2 as the growth of n^3 vastly outstrips n^2 at large values of n
+
+n^2 log(n) vs n(log(n))^10
+lim(A/B) where A is n^2 log(n) and B is n(log(n))^10 as n approaches +oo is +oo.
+Therefore A > B
+Can also be considered dividing both sides by logn
+n^2 vs nlogn^9
+Then divide by n
+n vs logn^9, in which case A is > B asymptotically
+
+n^logn vs 2^sqrtn
+n^logn = e^logn^2, 2^sqrtn = e^sqrtn log2
+logn^2 < sqrtn log2
+therefore 2^sqrtn is the greater asymtotically
+
+2^n vs 2^2n
+2^2n = 2^2^n = 4^n != 2^n
+therefore 2^2n is greater
+also violates big O definition
+
+isPrime(n):
+  for(i = 2, i*i <= n; i++) {
+    if(n % i == 0) {
+      return false
+    }
+  return true
+
+best case O(1) where n is divisible by a small prime, ie 2, 3, etc
+average/worst case O(sqrtn) where the for loop can iterate up to sqrt n times

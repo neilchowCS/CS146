@@ -1,0 +1,6 @@
+create two sorted queues, one of start times and one of end times
+go through both queues, incrementing a counter when a start time is encountered and
+decrementing when an end time is encountered
+the desired output, minimum servers to handle tasks, is the highest value the counter reaches
+this maximum is updated at the end of each unique time to get desired behavior of
+[1,2][2,3] having output of 1 instead of 2

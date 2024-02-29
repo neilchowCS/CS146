@@ -1,0 +1,9 @@
+two slightly different but similar in concept methods used
+python: created array with length = number of upper/lower letters and contents = number of
+occurrences of each corresponding character
+java: created hashmap that maps each letter to an integer count
+
+after the structure with character -> number of counts is created
+iterate through each character
+add count//2 to length of palindrome
+add 1 to length if count % 2 == 0, only once

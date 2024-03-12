@@ -1,0 +1,16 @@
+by property of BST:
+all children of left subtree less than root (unique BST)
+therefore
+if root.val > p.val && root.val > q.val
+ancestor must be in left subtree
+
+all children of right subtree > root
+therefore
+if root.val < p.val && root.val < q.val
+ancestor must be in right subtree
+
+if neither, p and q must be on either side of root or is root
+then, root must be ancestor
+
+through this method the lowest ancestor can be found recursively, with subsequent calls
+being made on left or right subtrees

@@ -1,0 +1,9 @@
+to invert a tree recursively
+
+take root and invert two child subtrees
+if root is null return null
+
+in order to maintain desired behavior of maintaining inverted children
+left child of root is inverted right subtree
+right child of root is inverted left subtree
+

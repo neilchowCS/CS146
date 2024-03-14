@@ -1,0 +1,17 @@
+to validate BST:
+every node must fulfill condition:
+node left child is < node
+node right child is > node
+
+therefore it can be solved recursively as follows:
+if root is null, return true
+if left child is present and >= root, return false (violated condition)
+same for right but <=
+
+if root exists and conditions are fulfilled, tree is valid for this layer
+recursively apply to lower layers by calling returning valid(left) && valid(right)
+if condition is violated for either of two children, result is false
+
+as this recursive continues to traverse the tree, it will terminate by returning false on one
+failed condition, which will propagate through the && chain. If not, it will reach the null children
+of leaves and return true for all instances

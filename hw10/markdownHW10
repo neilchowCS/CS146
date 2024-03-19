@@ -1,0 +1,14 @@
+return null if root is null
+create queue instantiated containing root
+
+while the queue is not empty:
+    store length of queue. This is the size of the current level of the tree
+    instantiate temporary list. This will be the array of values of the level to be added to output.
+
+    repeat for each node in queue (each node in current level):
+        pop node from queue, store value in temporary list as output
+        add children of node to queue
+    after this process, queue will contain all nodes in the following level and temp array
+    will contain all values of previously scanned level, which is added to output
+    this is repeated for each level until none are left, resulting in the desired output of a
+    level order traversal

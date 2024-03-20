@@ -1,0 +1,10 @@
+perform a depth first search on 2d array of integers recursively
+
+take starting cell as row, col
+check if coordinates are in bounds
+check if image[row][col] are not new color (to prevent infinite loop)
+check if image[row][col] are the starting color of starting cell (bounds of flood fill)
+these conditions end exploration of a cell
+
+if conditions are met, swap cell color to new color
+then recursively call function in the four cardinal directions

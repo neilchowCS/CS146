@@ -1,0 +1,27 @@
+Adjacency list to matrix:
+initialize nxn matrix of 0, where n is number of nodes (len adj list)
+iterate through list, getting all edges and setting matrix[node][connected node] to 1
+this results in an adjacency matrix
+
+Adjacency matrix to list:
+iterate through 2d array (matrix) through coordinates i, j (matrix[i][j])
+for every layer i (first dimension of matrix) add a list to adjacency list
+this represents list of adjacent nodes to node i
+for every cell j in layer i, if matrix[i][j] == 1, add j to the newly created list
+this results in an adjacency list
+
+To reverse a graph:
+implemented is the implementation for reversing a graph represented by adjacency matrix,
+where the direction is determined by ordering of coordinated, ie. matrix[1][2] represents
+edge from 1 to 2 and matrix[2][1] represents 2 to 1
+iterate through bottom triangle of matrix (leftmost 0 nodes of layer 1, leftmost 1 node of layer 2, etc)
+swap values of matrix[i][j] and matrix[j][i]
+
+to reverse adjacency list
+create a new adjacency list
+for each node in old adjacency list:
+for each neighbor of node, create neighbor list in new adjacency list if it doesn't exist and add node to list of neighbors of neighbor
+this will reverse an adjacency list
+
+to reverse object representation (list of node objects with list of neighbors)
+this is conceptually the same as adjacency list

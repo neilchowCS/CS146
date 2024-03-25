@@ -2,17 +2,17 @@ package hw9;
 
 public class TreeNode {
 
-    int val;
+    public int val;
 
-    TreeNode left;
+    public TreeNode left;
 
-    TreeNode right;
+    public TreeNode right;
 
     TreeNode() {}
 
-    TreeNode(int val) { this.val = val; }
+    public TreeNode(int val) { this.val = val; }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    public TreeNode(int val, TreeNode left, TreeNode right) {
 
         this.val = val;
 

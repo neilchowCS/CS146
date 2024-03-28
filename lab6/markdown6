@@ -1,0 +1,15 @@
+when can courses be taken? when there is no cycle in prereq, false otherwise
+
+1. convert edge list to adj list
+2. run kahns, return true if no cycle, false if cycle
+
+Kahn's
+Add all nodes with in-degree 0 to a queue.
+● While the queue is not empty:
+○ Remove a node from the queue, add to output.
+○ For each outgoing edge from the node, decrement the
+in-degree of the destination node by 1.
+○ If the in-degree of a destination node becomes 0, add it to the
+queue.
+
+after completion, if len output != len adj list, there is a cycle

@@ -1,0 +1,14 @@
+to find minimum cost
+create graph of houses connected by edges of weight = corresponding pipe
+connect all nodes to node 0 with weight = cost of corresponding well
+
+find MST of this graph
+
+prim's algorithm is used
+
+choose starting node
+repeat until all nodes are connected:
+select the minimum cost edge that connects a visited node to unvisited node
+sets are used for speed
+
+the cost of each selected edge is added to total cost and final value returned

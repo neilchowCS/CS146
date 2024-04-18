@@ -1,0 +1,6 @@
+1st run floyd warshall on graph, as implemented on lecture slides
+set all non existent edge lengths to higher than can be considered ie. threshold + 1
+
+floyd warshall gives array of shortest distance to all cities for each city
+for each city, count number of cities reachable within threshold
+return minimum city, with later cities overriding previous minimum if tied

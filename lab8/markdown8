@@ -1,0 +1,13 @@
+use dynamic programming
+for each sum of money up to amount (0...amount) memo the min cost to reach that amount
+first, initialize array, with 0 for amount 0 and max int for rest of array
+then, iterate through array from 1 to amount:
+for each coin, if the coin value is less than current amount looked at, set
+    min coin count of current amount in array to equal the minimum between existing minimum
+    and one plus the current amount if current coin is subtracted, ie. array[amount - coin value]
+
+this approach works since when adding coins one at a time, a minimum solution must satisfy the
+condition: if a coin is removed, the remaining pile of coins is the minimum solution for that sum
+
+if a solution is not available, array[amount] will equal max int, return -1
+else, return array[amount], the last memo entry
